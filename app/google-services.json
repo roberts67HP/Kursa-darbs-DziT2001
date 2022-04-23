@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "37225324818",
+    "firebase_url": "https://library-system-fb6a5-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "library-system-fb6a5",
+    "storage_bucket": "library-system-fb6a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37225324818:android:323d8d769cd487149753cb",
+        "android_client_info": {
+          "package_name": "lv.roberts.kursa_darbs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37225324818-b1lhc3s1asi8ahvcqltefp5g4omecklf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL0umaPGj83zTWDJ9DZ8zrH2bU0gc6_q8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37225324818-b1lhc3s1asi8ahvcqltefp5g4omecklf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37225324818:android:7a19718fc7acf8279753cb",
+        "android_client_info": {
+          "package_name": "lv.roberts.kursadarbs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37225324818-b1lhc3s1asi8ahvcqltefp5g4omecklf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL0umaPGj83zTWDJ9DZ8zrH2bU0gc6_q8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37225324818-b1lhc3s1asi8ahvcqltefp5g4omecklf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
