@@ -1,5 +1,7 @@
 package lv.roberts.kursa_darbs;
 
+import androidx.annotation.NonNull;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -51,7 +53,7 @@ public class BookContainer {
         DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference();
         databaseRef.child("Books").orderByValue().addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot item_snapshot:dataSnapshot.getChildren()) {
                     int id = Integer.valueOf(item_snapshot.getKey());
                     String title = item_snapshot.child("Title").getValue().toString();
@@ -64,7 +66,7 @@ public class BookContainer {
                     Book currentBook = getWithID(id);
                     if(currentBook != null) {
                         currentBook.title = title;
-                        currentBook.image = image;
+                        currentBook.imageName = image;
                         currentBook.author = author;
                         currentBook.publYear = publYear;
                         currentBook.amountAvailable = amount;
@@ -82,7 +84,7 @@ public class BookContainer {
         for (Book book : bookList) {
             DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference().child("Books/"+book.id);
             databaseRef.child("Title").setValue(book.title);
-            databaseRef.child("Image").setValue(book.image);
+            databaseRef.child("Image").setValue(book.imageName);
             databaseRef.child("Author").setValue(book.author);
             databaseRef.child("Year").setValue(book.publYear);
             databaseRef.child("Amount available").setValue(book.amountAvailable);
@@ -94,7 +96,7 @@ public class BookContainer {
         Book currBook = getWithID(id);
 
         databaseRef.child("Title").setValue(currBook.title);
-        databaseRef.child("Image").setValue(currBook.image);
+        databaseRef.child("Image").setValue(currBook.imageName);
         databaseRef.child("Author").setValue(currBook.author);
         databaseRef.child("Year").setValue(currBook.publYear);
         databaseRef.child("Amount available").setValue(currBook.amountAvailable);

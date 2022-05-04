@@ -6,8 +6,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.firebase.storage.FirebaseStorage;
-
 public class BookInfoActivity extends NavigationMenu {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,15 +72,15 @@ public class BookInfoActivity extends NavigationMenu {
         TextView bookDescrTV = findViewById(R.id.bookDescription);
 
         bookNameTV.setText(selectedBook.title);
-//        bookImageIV.setImageResource(Integer.valueOf(selectedBook.image));
+        if(selectedBook.image != null) {
+            bookImageIV.setImageBitmap(selectedBook.image);
+        } else {
+            bookImageIV.setImageResource(R.drawable.unknown);
+        }
         bookAuthorTV.setText(selectedBook.author);
         bookReleaseTV.setText(selectedBook.publYear);
         bookAmountTV.setText(selectedBook.amountAvailable+" copies available");
         bookDescrTV.setText(selectedBook.description);
-    }
-    public void getImage () {
-        FirebaseStorage storageRef = FirebaseStorage.getReference();
-
     }
     @Override
     protected void onDestroy () {

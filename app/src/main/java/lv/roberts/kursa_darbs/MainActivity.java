@@ -1,6 +1,7 @@
 package lv.roberts.kursa_darbs;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,9 +13,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainActivity extends BookLoadActivity {
     public static BookContainer bookCont = new BookContainer();
+    public static HashMap<String, Bitmap> images = new HashMap();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -30,7 +30,12 @@ public class BookAdapter extends ArrayAdapter<Book> {
         bookNameTV.setText(book.title);
         bookAuthorTV.setText(book.author);
         bookReleaseTV.setText(book.publYear);
-//        bookImageIV.setImageResource(Integer.valueOf(book.image));
+        if(book.image != null) {
+            bookImageIV.setImageBitmap(book.image);
+        } else {
+            bookImageIV.setImageResource(R.drawable.unknown);
+        }
+//        Glide.with(BookAdapter.this).load(book.image).into(bookImageIV);
         return convertView;
     }
 }
