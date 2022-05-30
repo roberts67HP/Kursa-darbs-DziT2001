@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -14,9 +13,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText editTextUsername, editTextPassword;
@@ -44,8 +40,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(ifUserIsValid(dataSnapshot, username, password)) {
-                    Intent mainActivity = new Intent (getApplicationContext(), MainActivity.class);
-                    startActivity(mainActivity);
+                    AudioActivity.libItemContainer.loadLibItemsFromDB(LibItem.Type.Audio);
+                    LiteratureActivity.libItemContainer.loadLibItemsFromDB(LibItem.Type.Literature);
+                    Intent resItemsAct = new Intent (getApplicationContext(), ResItemsActivity.class);
+                    startActivity(resItemsAct);
                 } else {
                     Toast incorrectInfoToast = Toast.makeText(
                             getApplicationContext(),"Username or password is wrong", Toast.LENGTH_SHORT);

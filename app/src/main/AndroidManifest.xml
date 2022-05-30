@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="lv.roberts.kursa_darbs">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -10,16 +9,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kursa_darbs">
         <activity
+            android:name=".LiteratureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AudioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LibItemInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ResBooksActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BookInfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

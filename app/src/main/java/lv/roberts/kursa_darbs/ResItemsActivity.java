@@ -1,22 +1,23 @@
 package lv.roberts.kursa_darbs;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
-public class ResBooksActivity extends BookLoadActivity {
+public class ResItemsActivity extends LibItemLoadActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_res_books);
+        setTitle("Reserved items");
 
+        AudioActivity.libItemContainer.loadLibItemsFromDB(LibItem.Type.Audio);
+        LiteratureActivity.libItemContainer.loadLibItemsFromDB(LibItem.Type.Literature);
         if(LoginActivity.currentUser != null) {
             loadMenu(R.id.activity_res_books);
-            LoginActivity.currentUser.loadReservedBooks();
-            setUpList(LoginActivity.currentUser.bookCont.getList());
-            setUpOnClickListener(true);
-            initSearchWidgets(LoginActivity.currentUser.bookCont.getList());
+            LoginActivity.currentUser.loadReservedItems();
+            setUpList(LoginActivity.currentUser.libItemContainer.getList());
+            setUpOnClickListener(LibItem.Type.None, true);
+            initSearchWidgets(LoginActivity.currentUser.libItemContainer.getList());
         } else {
             Intent loginActivity = new Intent (getApplicationContext(), LoginActivity.class);
             startActivity(loginActivity);

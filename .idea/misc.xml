@@ -4,12 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Kursa_darbs/app/src/main/res/drawable/headercolor.xml" value="0.2703125" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/drawable/ic_nav_home.xml" value="0.2035" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/drawable/ic_nav_literature.xml" value="0.2035" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/drawable/ic_nav_logout.xml" value="0.2035" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/drawable/ic_nav_resbooks.xml" value="0.2035" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_audio.xml" value="0.12360688956433637" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_audio_layout.xml" value="0.12360688956433637" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_book_info.xml" value="0.24909420289855072" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_book_info_framelayout.xml" value="0.24909420289855072" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_book_info_layout.xml" value="0.264" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_delivery.xml" value="0.25416666666666665" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_home_framelayout.xml" value="0.24909420289855072" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_home_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_item_info.xml" value="0.15715579710144928" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_item_info_layout.xml" value="0.1" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_literature.xml" value="0.12360688956433637" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_literature_layout.xml" value="0.12360688956433637" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_main_framelayout.xml" value="0.25317028985507245" />
@@ -17,11 +28,17 @@
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_reading.xml" value="0.264" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_res_books.xml" value="0.25416666666666665" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_res_books_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_resitem_info.xml" value="0.15715579710144928" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/activity_resitem_info_layout.xml" value="0.2" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/book_cell.xml" value="0.24909420289855072" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/content_navigation_menu.xml" value="0.24909420289855072" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/dialog_delivery.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/fragment_first.xml" value="0.264" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/fragment_res_books.xml" value="0.25416666666666665" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/fragment_second.xml" value="0.2" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/header.xml" value="0.4" />
+        <entry key="..\:/Kursa_darbs/app/src/main/res/layout/item_cell.xml" value="0.4" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/nav.xml" value="0.25317028985507245" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/nav_home_drawer.xml" value="0.25317028985507245" />
         <entry key="..\:/Kursa_darbs/app/src/main/res/layout/toolbar.xml" value="0.25317028985507245" />

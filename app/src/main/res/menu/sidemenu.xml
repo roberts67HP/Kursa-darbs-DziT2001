@@ -6,11 +6,15 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_nav_home"
-            android:title="Home" />
+            android:title="Reserved Items" />
         <item
-            android:id="@+id/nav_resbooks"
-            android:icon="@drawable/ic_nav_resbooks"
-            android:title="Reserved books" />
+            android:id="@+id/nav_literature"
+            android:icon="@drawable/ic_nav_literature"
+            android:title="Literature" />
+        <item
+            android:id="@+id/nav_audio"
+            android:icon="@drawable/ic_nav_audio"
+            android:title="Audio" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_nav_logout"

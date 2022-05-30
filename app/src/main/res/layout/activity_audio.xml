@@ -4,11 +4,11 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_audio"
     tools:opendrawer="left">
 
     <include
-        layout="@layout/activity_main_layout"
+        layout="@layout/activity_audio_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

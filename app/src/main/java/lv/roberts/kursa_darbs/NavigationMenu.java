@@ -1,19 +1,14 @@
 package lv.roberts.kursa_darbs;
 
 import android.content.Intent;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -47,25 +42,26 @@ public class NavigationMenu extends AppCompatActivity implements NavigationView.
         switch(menuItem.getItemId()) {
             case R.id.nav_home:
                 finish();
-                intent = new Intent (getApplicationContext(), MainActivity.class);
+                intent = new Intent (getApplicationContext(), ResItemsActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 break;
-            case  R.id.nav_resbooks:
+            case R.id.nav_literature:
                 finish();
-                intent = new Intent (getApplicationContext(), ResBooksActivity.class);
+                intent = new Intent (getApplicationContext(), LiteratureActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 break;
-            case  R.id.nav_logout:
+            case R.id.nav_audio:
+                finish();
+                intent = new Intent (getApplicationContext(), AudioActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                break;
+            case R.id.nav_logout:
                 LoginActivity.currentUser = null;
                 finish();
                 break;
-            default:
-                finish();
-                intent = new Intent (getApplicationContext(), MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
         }
         return false;
     }

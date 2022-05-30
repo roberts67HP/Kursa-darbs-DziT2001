@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="183dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="23dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:id="@+id/itemAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="23dp"
+            android:gravity="center_vertical"
+            android:text="Item author"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/itemType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemImage"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="23dp"
+            android:gravity="center_vertical"
+            android:text="Item type"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/itemReleaseYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemAuthor"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="23dp"
+            android:gravity="center_vertical"
+            android:text="Item release year"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/itemDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemAuthor"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="23dp"
+            android:gravity="center_vertical"
+            android:text="Item description"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/itemAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemAuthor"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="23dp"
+            android:gravity="center_vertical"
+            android:text="Copies available"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="23dp"
+            android:text="Back"/>
+
+        <Button
+            android:id="@+id/buttonAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="23dp"
+            android:text="Action"/>
+    </LinearLayout>
+</ScrollView>
