@@ -76,27 +76,4 @@ public class LibItemContainer {
             public void onCancelled(DatabaseError databaseError) {}
         });
     }
-//    public void updateToDB () {
-//        for (Book book : bookList) {
-//            DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference().child("Books/"+book.id);
-//            databaseRef.child("Title").setValue(book.title);
-//            databaseRef.child("Image").setValue(book.imageName);
-//            databaseRef.child("Author").setValue(book.author);
-//            databaseRef.child("Year").setValue(book.publYear);
-//            databaseRef.child("Amount available").setValue(book.amountAvailable);
-//            databaseRef.child("Description").setValue(book.description);
-//        }
-//    }
-
-//    public void updateBookOnDB (int id) {
-//        DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference().child("Books/"+id);
-//        Book currBook = getWithID(id);
-//
-//        databaseRef.child("Title").setValue(currBook.title);
-//        databaseRef.child("Image").setValue(currBook.imageName);
-//        databaseRef.child("Author").setValue(currBook.author);
-//        databaseRef.child("Year").setValue(currBook.publYear);
-//        databaseRef.child("Amount available").setValue(currBook.amountAvailable);
-//        databaseRef.child("Description").setValue(currBook.description);
-//    }
 }

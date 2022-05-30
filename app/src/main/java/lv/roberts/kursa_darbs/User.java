@@ -40,14 +40,4 @@ public class User {
             public void onCancelled(DatabaseError databaseError) {}
         });
     }
-//    public void updateReservedBookInfoInDB () {
-//        DatabaseReference databaseRef = FirebaseDatabase.getInstance().getReference().child("Users/"+username+"/Books");
-//        for (Book book : bookCont.getList()) {
-//            String idStr = String.valueOf(book.id);
-//            DatabaseReference bookRef = databaseRef.child(idStr);
-//            if(bookRef == null) {
-//                databaseRef.child(idStr).setValue(idStr);
-//            }
-//        }
-//    }
 }
